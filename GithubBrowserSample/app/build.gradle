@@ -150,12 +150,12 @@ task fullCoverageReport(type: JacocoReport) {
     def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
     def mainSrc = "${project.projectDir}/src/main/java"
 
-    sourceDirectories = files([mainSrc])
-    classDirectories = files([debugTree])
-    executionData = fileTree(dir: "$buildDir", includes: [
-            "jacoco/testDebugUnitTest.exec",
-            "outputs/code-coverage/connected/*coverage.ec"
-    ])
+//    sourceDirectories = files([mainSrc])
+//    classDirectories = files([debugTree])
+//    executionData = fileTree(dir: "$buildDir", includes: [
+//            "jacoco/testDebugUnitTest.exec",
+//            "outputs/code-coverage/connected/*coverage.ec"
+//    ])
 }
 
 // we need all open to run tests which  a we enable only for debug builds.
