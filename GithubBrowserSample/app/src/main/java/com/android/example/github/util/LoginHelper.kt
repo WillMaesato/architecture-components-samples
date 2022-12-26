@@ -3,7 +3,7 @@ package com.android.example.github.util
 import android.content.Intent
 import android.net.Uri
 import com.android.example.github.BuildConfig
-import com.android.example.github.api.AccessTokenParameter
+import com.example.data.api.AccessTokenParameter
 import com.android.example.github.api.GithubAuthService
 import com.android.example.github.repository.AccessTokenRepository
 import com.android.example.github.vo.AccessToken
@@ -31,7 +31,7 @@ class LoginHelper @Inject constructor(
 
         Timber.i("code: $tempCode")
 
-        val param = AccessTokenParameter(
+        val param = com.example.data.api.AccessTokenParameter(
             clientId = BuildConfig.GITHUB_CLIENT_ID,
             clientSecret = BuildConfig.GITHUB_CLIENT_SECRET,
             code = tempCode

@@ -71,6 +71,7 @@ def build_versions = [:]
 build_versions.min_sdk = 16
 build_versions.target_sdk = 28
 build_versions.build_tools = "28.0.3"
+build_versions.jvm = "1.8"
 ext.build_versions = build_versions
 
 def deps = [:]
@@ -220,6 +221,10 @@ kotpref.core = "com.chibatching.kotpref:kotpref:${versions.kotpref}"
 kotpref.initializer = "com.chibatching.kotpref:initializer:${versions.kotpref}"
 deps.kotpref = kotpref
 
+def module = [:]
+module.data_api = project(":data:api")
+deps.module = module
+
 ext.deps = deps
 
 deps.browser = "androidx.browser:browser:$versions.browser"
@@ -230,3 +235,4 @@ def addRepos(RepositoryHandler handler) {
     handler.maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 ext.addRepos = this.&addRepos
+

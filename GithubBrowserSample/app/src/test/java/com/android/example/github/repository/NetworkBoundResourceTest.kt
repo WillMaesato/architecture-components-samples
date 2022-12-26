@@ -21,7 +21,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.android.example.github.api.ApiResponse
+import com.example.data.api.ApiResponse
 import com.android.example.github.util.ApiUtil
 import com.android.example.github.util.CountingAppExecutors
 import com.android.example.github.util.InstantAppExecutors

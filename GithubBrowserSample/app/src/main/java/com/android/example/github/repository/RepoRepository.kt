@@ -19,7 +19,7 @@ package com.android.example.github.repository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.switchMap
 import com.android.example.github.AppExecutors
-import com.android.example.github.api.ApiSuccessResponse
+import com.example.data.api.ApiSuccessResponse
 import com.android.example.github.api.GithubService
 import com.android.example.github.api.RepoSearchResponse
 import com.android.example.github.db.GithubDb
