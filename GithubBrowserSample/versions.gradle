@@ -223,6 +223,9 @@ deps.kotpref = kotpref
 
 def module = [:]
 module.data_api = project(":data:api")
+module.data_repository = project(":data:repository")
+module.data_api_builder = project(":data:api-builder")
+module.model = project(":model")
 deps.module = module
 
 ext.deps = deps

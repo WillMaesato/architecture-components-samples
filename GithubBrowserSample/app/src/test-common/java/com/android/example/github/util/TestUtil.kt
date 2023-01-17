@@ -16,9 +16,9 @@
 
 package com.android.example.github.util
 
-import com.android.example.github.vo.Contributor
-import com.android.example.github.vo.Repo
-import com.android.example.github.vo.User
+import com.example.model.Contributor
+import com.example.model.Repo
+import com.example.model.User
 
 object TestUtil {
 

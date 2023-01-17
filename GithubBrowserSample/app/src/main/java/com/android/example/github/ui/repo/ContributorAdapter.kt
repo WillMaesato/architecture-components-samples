@@ -26,7 +26,7 @@ import com.android.example.github.AppExecutors
 import com.android.example.github.R
 import com.android.example.github.databinding.ContributorItemBinding
 import com.android.example.github.ui.common.DataBoundListAdapter
-import com.android.example.github.vo.Contributor
+import com.example.model.Contributor
 
 class ContributorAdapter(
     private val dataBindingComponent: DataBindingComponent,

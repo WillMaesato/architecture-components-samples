@@ -1,0 +1,46 @@
+android {
+    compileSdkVersion build_versions.target_sdk
+    buildToolsVersion build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        buildConfigField "String", "GITHUB_CLIENT_ID", "\"8d665aec88895c436099\""
+        buildConfigField "String", "GITHUB_CLIENT_SECRET", "\"b0a42dc287ebb6ef217ed78c9aa5944b169a2997\""
+        buildConfigField "String", "GITHUB_END_POINT", "\"https://api.github.com/\""
+        buildConfigField "String", "GITHUB_AUTH_END_POINT", "\"https://github.com/\""
+
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled !project.hasProperty('android.injected.invoked.from.ide')
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility build_versions.jvm
+        targetCompatibility build_versions.jvm
+    }
+    kotlinOptions {
+        jvmTarget = build_versions.jvm
+    }
+    dataBinding {
+        enabled = true
+    }
+    sourceSets {
+        androidTest.java.srcDirs += "src/test-common/java"
+        test.java.srcDirs += "src/test-common/java"
+    }
+    lintOptions {
+        lintConfig rootProject.file('lint.xml')
+    }
+}

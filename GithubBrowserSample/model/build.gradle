@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply from: "$rootDir/plugins/android.gradle"
+
+dependencies {
+    implementation deps.kotlin.stdlib
+
+    implementation deps.retrofit.gson
+    implementation deps.room.runtime
+
+    kapt deps.room.compiler
+
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.espresso.core
+
+    testImplementation deps.junit
+}

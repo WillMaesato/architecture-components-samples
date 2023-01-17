@@ -23,8 +23,8 @@ import androidx.lifecycle.switchMap
 import com.android.example.github.repository.RepoRepository
 import com.android.example.github.testing.OpenForTesting
 import com.android.example.github.util.AbsentLiveData
-import com.android.example.github.vo.Contributor
-import com.android.example.github.vo.Repo
+import com.example.model.Contributor
+import com.example.model.Repo
 import com.android.example.github.vo.Resource
 import javax.inject.Inject
 

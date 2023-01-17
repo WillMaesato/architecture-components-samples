@@ -20,8 +20,8 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import com.example.data.api.ApiResponse
-import com.android.example.github.api.GithubService
-import com.android.example.github.api.RepoSearchResponse
+import com.example.data.api.GithubService
+import com.example.data.api.RepoSearchResponse
 import com.android.example.github.db.GithubDb
 import com.android.example.github.db.RepoDao
 import com.android.example.github.util.AbsentLiveData
@@ -30,8 +30,8 @@ import com.android.example.github.util.InstantAppExecutors
 import com.android.example.github.util.TestUtil
 import com.android.example.github.util.argumentCaptor
 import com.android.example.github.util.mock
-import com.android.example.github.vo.Contributor
-import com.android.example.github.vo.Repo
+import com.example.model.Contributor
+import com.example.model.Repo
 import com.android.example.github.vo.RepoSearchResult
 import com.android.example.github.vo.Resource
 import org.hamcrest.CoreMatchers.`is`

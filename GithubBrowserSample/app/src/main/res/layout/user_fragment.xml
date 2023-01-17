@@ -24,7 +24,7 @@
         <import type="com.android.example.github.vo.Resource" />
 
         <import type="androidx.lifecycle.LiveData"/>
-        <import type="com.android.example.github.vo.User"/>
+        <import type="com.example.model.User"/>
         <import type="com.bumptech.glide.request.RequestListener"/>
         <import type="android.graphics.drawable.Drawable"/>
         <variable

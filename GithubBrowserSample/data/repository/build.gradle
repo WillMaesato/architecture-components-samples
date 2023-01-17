@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+apply from: "$rootDir/plugins/android.gradle"
+
+dependencies {
+    implementation deps.module.data_api
+    implementation deps.module.model
+
+    implementation deps.core_ktx
+    implementation deps.lifecycle.livedata_ktx
+    implementation deps.kotlin.stdlib
+
+    implementation deps.dagger.runtime
+    kapt deps.dagger.compiler
+
+    implementation deps.kotpref.core
+    implementation deps.kotpref.initializer
+
+    androidTestImplementation deps.atsl.ext_junit
+    androidTestImplementation deps.espresso.core
+
+    testImplementation deps.junit
+}

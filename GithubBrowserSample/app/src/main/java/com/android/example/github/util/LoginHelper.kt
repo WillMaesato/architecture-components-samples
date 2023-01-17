@@ -3,10 +3,9 @@ package com.android.example.github.util
 import android.content.Intent
 import android.net.Uri
 import com.android.example.github.BuildConfig
-import com.example.data.api.AccessTokenParameter
-import com.android.example.github.api.GithubAuthService
-import com.android.example.github.repository.AccessTokenRepository
-import com.android.example.github.vo.AccessToken
+import com.example.data.api.GithubAuthService
+import com.example.data.repository.AccessTokenRepository
+import com.example.data.api.AccessToken
 import timber.log.Timber
 import javax.inject.Inject
 

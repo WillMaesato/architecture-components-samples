@@ -24,8 +24,8 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.android.example.github.testing.OpenForTesting
-import com.android.example.github.vo.Contributor
-import com.android.example.github.vo.Repo
+import com.example.model.Contributor
+import com.example.model.Repo
 import com.android.example.github.vo.RepoSearchResult
 
 /**

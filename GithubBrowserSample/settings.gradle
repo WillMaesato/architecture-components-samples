@@ -18,3 +18,8 @@ include ':app'
 
 /* Data Modules */
 include ':data:api'
+include ':data:repository'
+include ':data:api-builder'
+
+/* Model Modules */
+include ':model'

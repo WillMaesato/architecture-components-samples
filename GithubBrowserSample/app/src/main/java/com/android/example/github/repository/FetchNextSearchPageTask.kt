@@ -22,7 +22,7 @@ import com.example.data.api.ApiEmptyResponse
 import com.example.data.api.ApiErrorResponse
 import com.example.data.api.ApiResponse
 import com.example.data.api.ApiSuccessResponse
-import com.android.example.github.api.GithubService
+import com.example.data.api.GithubService
 import com.android.example.github.db.GithubDb
 import com.android.example.github.vo.RepoSearchResult
 import com.android.example.github.vo.Resource

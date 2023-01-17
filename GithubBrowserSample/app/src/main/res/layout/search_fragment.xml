@@ -20,7 +20,7 @@
 
     <data>
 
-        <import type="com.android.example.github.vo.Repo" />
+        <import type="com.example.model.Repo" />
 
         <import type="java.util.List" />
 
